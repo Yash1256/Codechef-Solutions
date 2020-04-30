@@ -14,31 +14,25 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     FASTIO;
-    tc
-    {
+    tc {
         int n, x;
         cin >> n;
         vector<int> v;
-        for (int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             cin >> x;
             if (x % 2 == 0)
                 v.pb(i + 1);
         }
         int q;
         cin >> q;
-        while (q--)
-        {
+        while (q--) {
             int l, r;
             bool flag = true;
             cin >> l >> r;
-            for (int i = 0; i < v.size(); i++)
-            {
-                if (l <= v[i] && r >= v[i])
-                {
+            for (int i = 0; i < v.size(); i++) {
+                if (l <= v[i] && r >= v[i]) {
                     cout << "EVEN" << endl;
                     flag = false;
                     break;

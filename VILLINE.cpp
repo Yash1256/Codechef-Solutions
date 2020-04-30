@@ -14,16 +14,14 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
     FASTIO;
     int n;
     cin >> n;
     int m, c;
     cin >> m >> c;
     int power_up = 0, power_down = 0;
-    while (n--)
-    {
+    while (n--) {
         int x, y, power;
         cin >> x >> y >> power;
         if ((y - m * x - c) > 0)

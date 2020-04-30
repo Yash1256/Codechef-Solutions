@@ -14,24 +14,24 @@ int main() {
             cin >> v[i];
         }
         v_copy = v;
-        int f_indx , s_indx;
+        int f_indx, s_indx;
         sort(v_copy.begin(), v_copy.end());
-        int maxi = v_copy[n-1];
-        for(int i=0 ; i<n ; i++){
-            if(v[i] == maxi){
+        int maxi = v_copy[n - 1];
+        for (int i = 0; i < n; i++) {
+            if (v[i] == maxi) {
                 f_indx = i;
                 break;
             }
         }
-        for(int i=0 ; i<n ; i++){
-            if(v[i] == maxi){
+        for (int i = 0; i < n; i++) {
+            if (v[i] == maxi) {
                 s_indx = i;
             }
         }
-        if((s_indx - f_indx) > n/2)
-            cout<<0<<endl;
+        if ((s_indx - f_indx) > n / 2)
+            cout << 0 << endl;
         else
-            cout<<((n/2) - (s_indx - f_indx))<<endl;
+            cout << ((n / 2) - (s_indx - f_indx)) << endl;
         v_copy.clear();
         v.clear();
     }
